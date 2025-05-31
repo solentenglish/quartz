@@ -8,7 +8,15 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    siteMetadata: {
+      title: "My Notes",
+      description: "A digital garden of thoughts.",
+      author: "Glen Sutton",
+      language: "en-GB",
+      ogImage: "./assets/og.png",
+      sidebarTitle: "My Notes",
+    },
+    pageTitle: "Notes",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -23,7 +31,7 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
+        header: "Playfair Display",
         body: "Source Sans Pro",
         code: "IBM Plex Mono",
       },
